@@ -61,76 +61,89 @@ The system consists of three main layers:
     - Etherium compatible network
 
 ## Project Structure
-  ___ README.md
-  ___.gitignore
-  ___LICENSE
-  ___docs/
-        ___architecture.md
-        ___api_design.md
-        ___smart_contract_design.md
-        ___project_pruposal.pdf
-        ___presentation.pdf
 
-  ___frontend/
-        ___index.html
-        ___css/
-              ___styles.css
-        ___js/
-              ___wallet.js
-              ___student_dashboard.js
-              ___admin_dashboard.js
-              ___qr_generation.js
-              ___api.js
-        ___pages/
-              ___student_dashboard.html
-              ___request_token.html
-              ___verify_identity.html
-              ___admin_dashboard.html
-              ___wallet_recovery.html
-        ___assets/
-              ___images/
-              ___icons/
-
-  ___backend/
-        ___app.py
-        ___config.py
-        ___requirements.txt
-        ___databse/
-              ___db.py
-              ___scheme.sql
-        ___models/
-              ___student_model.py
-              ___token_model.py
-              ___request_model.py
-              ___wallet_change_model.py
-        ___routes/
-              ___token_routes.py
-              ___verification_routes.py
-              ___admin_routes.py
-              ___student_routes.py
-        ___services/
-              ___blockchain_service.py
-              ___qr_service.py
-        ___utils/
-              ___helper.py
-              ___validation.py
-
-  ___blockchain/
-        ___contracts/
-              ___studentIdentitySBT.sol
-        ___scripts/
-              ___deploy.js
-              ___intercat.js
-        ___test/
-              ___contract_test.js
-        ___hardhat.config.js
-        ___package.json
-  ___diagrams/
-        ___system_architecture.png
-        ___data_flow.png
-        ___smart_contract_flow.png
-
-
+university-digital-id-sbt/
+│
+├── README.md
+├── .gitignore
+├── LICENSE
+│
+├── docs/
+│   ├── architecture.md
+│   ├── api_design.md
+│   ├── smart_contract_design.md
+│
+├── frontend/
+│   ├── index.html
+│   ├── css/
+│   │   └── styles.css
+│   │
+│   ├── js/
+│   │   ├── wallet.js
+│   │   ├── student_dashboard.js
+│   │   ├── admin_dashboard.js
+│   │   ├── qr_generator.js
+│   │   └── api.js
+│   │
+│   ├── pages/
+│   │   ├── student_dashboard.html
+│   │   ├── request_token.html
+│   │   ├── verify_identity.html
+│   │   ├── admin_dashboard.html
+│   │   └── wallet_recovery.html
+│   │
+│   └── assets/
+│       ├── images/
+│       └── icons/
+│
+├── backend/
+│   ├── app.py
+│   ├── config.py
+│   ├── requirements.txt
+│   │
+│   ├── database/
+│   │   ├── db.py
+│   │   └── schema.sql
+│   │
+│   ├── models/
+│   │   ├── student_model.py
+│   │   ├── token_model.py
+│   │   ├── request_model.py
+│   │   └── wallet_change_model.py
+│   │
+│   ├── routes/
+│   │   ├── token_routes.py
+│   │   ├── verification_routes.py
+│   │   ├── admin_routes.py
+│   │   └── student_routes.py
+│   │
+│   ├── services/
+│   │   ├── blockchain_service.py
+│   │   └── qr_service.py
+│   │
+│   └── utils/
+│       ├── helpers.py
+│       └── validators.py
+│
+├── blockchain/
+│   ├── contracts/
+│   │   └── StudentIdentitySBT.sol
+│   │
+│   ├── scripts/
+│   │   ├── deploy.js
+│   │   └── interact.js
+│   │
+│   ├── test/
+│   │   └── contract_test.js
+│   │
+│   ├── hardhat.config.js
+│   └── package.json
+│
+└── diagrams/
+    ├── system_architecture.png
+    ├── data_flow.png
+    └── smart_contract_flow.png
+    
 ##Steup Instructions
   01. Clone Repository
        git clone https://guthub.com/VinushaDayananda/university-digital-id-sbt.git
